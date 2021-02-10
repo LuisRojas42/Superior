@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista</title>
+  <!-- scripts -->
+  <script src="js/cola.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/lista.css">
+
+  <!-- sources -->
+    <!--material design -->
+  <link rel="stylesheet" href="media/components/material-design/material.min.css">
+  <script src="media/components/material-design/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body onload="desactivaTxt();">
+
+  <button style="display: none;" id="insInicio" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="insertaInicio();">
+    Insertar al inicio
+  </button>
+  <button id="insFinal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="insertaFinal();">
+    Insertar al final
+  </button>
+  <button style="display: none;" id="insPos" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="insertaPosicion();">
+    Insertar en posción
+  </button>
+  <button id="eliInicio" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="eliminaInicio();">
+    Eliminar al inicio
+  </button>
+  <button style="display: none;" id="eliFinal" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="eliminaFinal();">
+    Eliminar al final
+  </button>
+  <button style="display: none;" id="eliPos" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="eliminaPosicion();">
+    Eliminar en posción
+  </button>
+  <br>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="valorText">
+    <input class="mdl-textfield__input" type="text" id="sample3" >
+    <label class="mdl-textfield__label" for="sample3" id="lblValor">Valor</label>
+  </div>
+  <div style="display: none;" class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="valorText">
+    <input class="mdl-textfield__input" type="text" id="sample4" >
+    <label class="mdl-textfield__label" for="sample3" id="lblValor2">Posicion</label>
+  </div>
+  <br>
+  <center>
+    <button id="ok" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="ok();">
+    Confirmar
+    </button>
+
+    <br><br>
+
+    <div id="lista">
+    
+    </div>
+
+    <div id="code">
+      
+    </div>
+
+  </center>
+
+  <button id="eliPos" class="btnCokie mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="guardaLista();">
+    Guardar lista en cookie
+  </button>
+  <button id="eliPos" class=" btnCokie mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="abrirLista();">
+    Abrir lista guardada
+  </button>
+  <br><br><br>
+  <button id="insInicio" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="window.location.href = 'index.html';">
+    Volver al inicio
+  </button>
+  
+</body>
+</html>

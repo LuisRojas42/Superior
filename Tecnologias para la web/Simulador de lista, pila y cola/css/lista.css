@@ -1,0 +1,59 @@
+body{
+	background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(255,246,236,1) 39.5%, rgba(100,46,122,0.23) 100.2% );
+	text-align: center;
+	padding-top: 5%;
+	margin: 2%;
+	height: 100%;
+}
+
+button{
+	
+}
+
+#lista{
+  /*background: #cccccc;*/
+  position: relative;	
+  height: 100px;
+}
+
+#code{
+	height: 300px;
+	background: #e3f6f5;
+	width: 60%;
+	text-align: left;
+}
+
+#elements{
+	background: #c2b0c9;
+	width: 50%;
+	position: relative;
+}
+
+@keyframes apareceDiv {
+  from {
+  		width: 0px;}
+  to {background-color: #c2b0c9;
+  	  width: 60px;}
+}
+
+.newDiv {
+  animation-name: apareceDiv;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}
+
+.btnCokie{
+	bottom:0px;
+}
+@keyframes desapareceDiv {
+  from {
+  		}
+  to {
+  	  width: 0px;}
+}
+
+.delDiv {
+  animation-name: desapareceDiv;
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+}

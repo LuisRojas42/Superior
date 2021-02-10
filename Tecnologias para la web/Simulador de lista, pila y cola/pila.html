@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Lista</title>
+  <!-- scripts -->
+  <script src="js/pila.js"></script>
+
+  <!-- css -->
+  <link rel="stylesheet" href="css/lista.css">
+
+  <!-- sources -->
+    <!--material design -->
+  <link rel="stylesheet" href="media/components/material-design/material.min.css">
+  <script src="media/components/material-design/material.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body onload="desactivaTxt();">
+
+  <button id="insInicio" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="insertaInicio();">
+    Insertar
+  </button>
+  <button id="eliInicio" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="eliminaInicio();">
+    Eliminar
+  </button>
+  <br>
+  <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label" id="valorText">
+    <input class="mdl-textfield__input" type="text" id="sample3" >
+    <label class="mdl-textfield__label" for="sample3" id="lblValor">Valor</label>
+  </div>
+  <br>
+  <center>
+    <button id="ok" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="ok();">
+    Confirmar
+    </button>
+
+    <br><br>
+
+    <div id="lista">
+    
+    </div>
+
+    <div id="code">
+      
+    </div>
+
+  </center>
+
+  <button id="eliPos" class="btnCokie mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="guardaLista();">
+    Guardar pila en cookie
+  </button>
+  <button id="eliPos" class=" btnCokie mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="abrirLista();">
+    Abrir pila guardada
+  </button>
+  <br><br><br>
+  <button id="insInicio" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect" onclick="window.location.href = 'index.html';">
+    Volver al inicio
+  </button>
+
+</body>
+</html>
