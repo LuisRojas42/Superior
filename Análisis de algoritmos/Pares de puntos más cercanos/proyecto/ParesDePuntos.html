@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pares de Puntos Más Cercanos</title>
+    <script src="./p5.js"></script>
+    <script defer src="./main.js"></script>
+    <script defer src="./punto.js"></script>
+    <link href="magic-check.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./estilo.css" />
+  </head>
+
+  <body>
+    <div class="flexBoxHorizontal titulos tituloIniciales">
+      <div class="tooltip">
+        <h1 id="tituloInfomacion">
+          Proyecto final: "Pares de puntos mas cercanos"
+        </h1>
+        <span class="tooltiptext toolTitulo"
+          >Dados n puntos en un espacio métrico, se pide encontrar un par de
+          puntos con la distancia mas pequeña entre ellos</span
+        >
+      </div>
+      <div>
+        <h3 id="tituloHexagrama">Integrantes:</h3>
+        <p>&nbsp Rojas Zepeda Luis Eduardo</p>
+        <p>&nbsp Rodriguez Alcantar Erick</p>
+        <p>&nbsp Rojas Rivero Saul</p>
+      </div>
+    </div>
+    <div class="contenedor">
+      <div class="flexBoxHorizontal">
+        <div id="canvasTag"></div>
+        <div class="seccionBottons" style="width: 354px; margin-top: 2rem">
+          <button class="botonAccion tooltip" id="botonIniciar">
+            Iniciar
+            <span class="tooltiptext"></span>
+          </button>
+          <button
+            class="botonAccion"
+            id="botonReiniciar"
+            onclick="f_reiniciar()"
+          >
+            Reiniciar
+          </button>
+          <button class="botonAccion" id="botonTuto" onclick="f_explicacion()">
+            Explicación
+          </button>
+          <div
+            id="divTuto"
+            style="margin: 0; text-align: center; padding-top: 3rem"
+          >
+            <img
+              src="./tuto.gif"
+              alt=""
+              style="
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 0 9px 19px rgba(0, 0, 0, 0.19),
+                  0 6px 6px rgba(0, 0, 0, 0.22);
+                border: none;
+              "
+            />
+            <video
+              style="
+                width: 100%;
+                border-radius: 5px;
+                box-shadow: 0 9px 19px rgba(0, 0, 0, 0.19),
+                  0 6px 6px rgba(0, 0, 0, 0.22);
+                border: none;
+              "
+              class="displayNone"
+              width="100%"
+              controls
+            >
+              <source src="tutorialVideo.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+          <div
+            class="divCheckBox"
+            style="margin-top: 3rem; margin-bottom: 3rem"
+          >
+            <input
+              class="magic-checkbox"
+              type="checkbox"
+              name="layout"
+              id="checkTuto"
+              value="option"
+              onclick="f_checkEjecutaD();"
+            />
+            <label for="checkTuto">Ejecutar didacticamente</label>
+          </div>
+          <div class="" style="text-align: center">
+            <button
+              class="botonAccion displayNone"
+              id="botonAdelante"
+              onclick="f_Siguiente();"
+            >
+              Siguiente
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        class="flexBoxHorizontal"
+        style="
+          text-align: center;
+          margin-bottom: 5rem;
+          margin-top: 1rem;
+          font-size: 19px;
+          font-weight: bold;
+          padding-left: 10px;
+          padding-right: 10px;
+        "
+      >
+        <div
+          style="margin-left: auto; margin-right: auto"
+          class="divComentarios"
+        >
+          <p id="pComentarios" class="displayNone"></p>
+        </div>
+        <div style="width: 17%"></div>
+      </div>
+    </div>
+  </body>
+</html>

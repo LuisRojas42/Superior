@@ -1,0 +1,201 @@
+:root {
+  --azul0: #001b48;
+  --azul1: #02457a;
+  --azul2: #018abe;
+  --azul3: #97cadb;
+  --azul4: #d6e8ee;
+  --tooltip: rgba(1, 138, 190, 0.9);
+  --azul0Rgba: rgb(0, 27, 720);
+  --azul1Rgb: #02457a;
+  --azul2Rgb: rgb(1, 138, 190);
+  --azul3Rgb: #97cadb;
+  --azul4Rgb: #d6e8ee;
+}
+@font-face {
+  font-family: "Quicksand";
+  src: url("Quicksand-VariableFont_wght.ttf"); /* IE9 Compat Modes */
+}
+* {
+  font-family: "Quicksand";
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  background-color: var(--azul4);
+  margin: 0;
+}
+
+.flexBoxHorizontal {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  color: white;
+  font-family: sans-serif;
+}
+
+.botonAccion {
+  text-decoration: none;
+  min-width: 115px;
+  font-weight: 60;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: var(--azul1);
+  border-radius: 6px;
+  border: 2px solid var(--azul1);
+  transition: 0.5s ease;
+}
+
+.botonAccion:hover {
+  color: #ffffff;
+  background-color: var(--azul0);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+.botonAccion[disabled] {
+  background-color: var(--azul2);
+  border: 2px solid var(--azul2);
+}
+.botonAccion[disabled]:hover {
+  color: #ffffff;
+  background-color: var(--azul2);
+  transform: scale(1);
+  transition: 0.5s ease;
+}
+
+.centrar {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contenedor {
+  width: 100%;
+}
+
+#canvasTag {
+  margin-left: auto;
+  margin-right: 5rem;
+}
+
+.seccionBottons {
+  margin-right: 5%;
+}
+
+.titulos {
+  text-align: center;
+  background-color: var(--azul1);
+  border-radius: 1rem;
+  box-shadow: 0 9px 19px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.22);
+  margin-bottom: 2rem;
+}
+
+.tituloIniciales {
+  border-top-left-radius: 0rem;
+  border-top-right-radius: 0rem;
+}
+
+.tituloIniciales div:first-child {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tituloIniciales div:last-child {
+  width: 11%;
+  text-align: left;
+  font-size: 12px;
+}
+
+.tituloIniciales div:last-child p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.tituloIniciales div:last-child h3 {
+  margin-top: 9px;
+  margin-bottom: 0;
+}
+
+.botonAccion {
+  text-decoration: none;
+  padding: 0.5rem 5px 0.5rem 5px;
+  font-weight: 60;
+  font-size: 15px;
+  color: #ffffff;
+  background-color: var(--azul1);
+  border-radius: 6px;
+  border: 2px solid var(--azul1);
+  transition: 0.5s ease;
+}
+
+.botonAccion:hover {
+  color: #ffffff;
+  background-color: var(--azul0);
+  transform: scale(1.1);
+  transition: 0.5s ease;
+}
+
+canvas {
+  border-radius: 12px;
+  box-shadow: 0 9px 19px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.22);
+  border: none;
+}
+
+.tooltip {
+  position: relative;
+  border: 1px solid var(--azul1);
+}
+
+.tooltip .tooltiptext {
+  font-size: 12px;
+  visibility: hidden;
+  width: 120px;
+  background-color: var(--tooltip);
+  color: white;
+  text-align: center;
+  padding: 5px;
+  border-radius: 6px;
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  left: 80px;
+}
+
+.toolTitulo {
+  top: 89px !important;
+  left: 80px !important;
+  width: 300px !important;
+}
+
+@keyframes animacionAparecer {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.tooltip:hover .tooltiptext {
+  animation: 0.5s animacionAparecer forwards;
+  visibility: visible;
+}
+
+.divComentarios {
+  color: var(--azul0);
+
+  border-radius: 8px;
+  max-width: 700px;
+  padding-left: 1em;
+  padding-right: 1em;
+  box-shadow: 0 9px 19px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.22);
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.divCheckBox {
+  color: var(--azul1);
+  font-weight: bold;
+}
+
+.displayNone {
+  display: none;
+}
