@@ -1,0 +1,7 @@
+S->E
+S->sAP
+P->pASQ
+Q->SS
+Q->qPs
+P->q
+A->a

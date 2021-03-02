@@ -1,0 +1,5 @@
+W->wXY
+W->yWx
+X->xY
+Y->yx
+X->Yw
