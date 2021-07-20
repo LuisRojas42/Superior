@@ -1,0 +1,31 @@
+0-ITUI
+1-ISO-uuu
+2-ISO/ITUI
+1.0-Standard
+1.2-ISO memeber body
+1.3-ISO identified organization
+1.3.6-US DoD
+1.3.22-Open sftware foundation
+1.3.57-NATO Identified
+1.3.6.1-Internet
+1.3.6.1.1-Directory
+1.3.6.1.2-Managment
+1.3.6.1.3-Experimental
+1.3.6.1.4-Private
+1.3.6.1.5-Security
+1.3.6.1.6-snmpv
+1.3.6.1.7-Mail
+1.3.6.1.2.1-MIB2
+1.3.6.1.2.1.1-System-nuevoValor
+1.3.6.1.2.1.2-Inteface-valor2
+1.3.6.1.2.1.3-Address-valor3
+1.3.6.1.2.1.4-ip-valor4
+1.3.6.1.2.1.5-icmp-valor5
+1.3.6.1.2.1.6-tcp-valor6
+1.3.6.1.2.1.7-udp-valor7
+1.3.6.1.2.1.8-egp-valor8
+1.3.6.1.2.1.9-cmat-valor9
+1.3.6.1.2.1.10-transmission-valor10
+1.3.6.1.2.1.11-snmp-valor11
+1.3.6.1.2.1.16-rmon-valor12
+
